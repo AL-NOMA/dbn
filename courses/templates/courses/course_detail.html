@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Course view -->
+<div class="container">
+    <div class="row">
+        <!-- title -->
+        <div class="col-12">
+            <h1 class="details__title">{{ course.title }}</h1>
+        </div>
+        <!-- End title -->
+
+        <!-- Content -->
+        <div style="padding:56.16% 0 0 0;position:relative;">
+            <iframe
+                src="https://player.vimeo.com/video/590534762?h=52c42820ee&title=0&byline=0&portrait=0"
+                style="position:absolute;top:0;left:0;width:80%;height:80%;" frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+</div>
+{% endblock content %}
